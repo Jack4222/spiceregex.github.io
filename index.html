@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Srisakdi:wght@700&display=swap" rel="stylesheet">
+    <style>
+        Header{
+            font-family: 'Lemonada', cursive;
+            text-shadow: 2px 2px 10px black;
+            display:flex;
+            width:100%;
+            height:200px;
+            background-color:#e7bb8c;
+            font-size:40px;
+            
+        }
+        body{
+            background-image: linear-gradient(#ffffff,#e7bb8c);
+        }
+        .nav{
+            display:flex;
+            width:100%;
+            height:60px;
+            background-color: #b09172;
+            justify-content: center;
+            align-items: center;
+        }
+        .p1{
+            display:flex;
+            padding-inline:25px;
+            font-size:24px;
+            color:white;
+        
+        }
+        .frm1{
+            margin-bottom: 50px;
+            display:flex;
+            position:relative;
+            z-index:1;
+            margin-top: 70px;
+            margin-inline:20px;
+            width:1000px;
+            height:700px;
+        }
+        #text{
+            position:absolute;
+            z-index: 2;
+            border-radius:10px;
+            margin-top:50px;
+            margin-inline:20px;
+            width:1000px;
+            text-align: center;
+            font-size:35px;
+            background-color: #e7bb8c;
+        }
+        #text1{
+            z-index: 2;
+            position:absolute;
+            border-radius:10px;
+            margin-top:450px;
+            margin-inline:20px;
+            width:1000px;
+            text-align: center;
+            font-size:35px;
+            background-color: #e7bb8c;
+        }
+        form{
+            border-radius: 15px;
+            display:flex;
+            background-color: rgb(219, 215, 204);
+            display:flex;
+            width:100%;
+            height:700px;
+            
+        }
+        .field1{
+        z-index: 5;
+        margin-block:50px;
+        margin-inline:40px;
+        width: 300px;
+        height: 400px;
+        text-align: right;
+        }
+        .credit{
+        margin-top:450px;
+        margin-inline:-450px;
+        width: 400px;
+        height: 400px;
+        text-align: right;
+        }
+        #cardcomp{
+            width: 500px;
+        }
+        .sta{
+            text-align: left;
+            margin-inline:100px;
+        }
+        Footer{
+            width: 100%;
+            height: 200px;
+            background-color:#b09172;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Spice Bowl</h1>
+        
+    </header>
+    <section class="s1">
+        <div class="nav">
+            <p class="p1">Spices</p>
+            <p class="p1">Recipes</p>
+            <p class="p1">My Cart</p>
+            <p class="p1">My Account</p>
+            <p class="p1">Contact Us</p>
+        </div>
+    </section>
+    <div id="text">Payment Form</div>
+    <div id="text1">Credit Card</div>
+    <section class="frm1">
+            <form>
+                <div class="field1">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" pattern="^[a-zA-Z]{1,20}" required>
+                    <br>
+                    <br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" pattern="^[a-zA-Z]{1,20}" required>
+                    <br>
+                    <br>
+                    <label for="addr">Address</label>
+                    <input type="text" id="addr" name="address" pattern="[0-9]*[^a-zA-Z]" maxlength="5" required>
+                    <br>
+                    <br>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="City" pattern="^[a-zA-Z]{1,20}" required>
+                    <br>
+                    <br>
+                    <div class="sta">
+                    <label for="state" >State</label>
+                    <select id="state" required>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CZ">CZ</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="DC">DC</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="GU">GU</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="PR">PR</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VI">VI</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                    </select>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="zip">Zipcode</label>
+                    <input type="text" id="zip" pattern="[0-9]*[^a-zA-Z]{5,5}" maxlength="5"  required>
+                    <br>
+                    <br>
+                    <label for="Coun">Country</label>
+                    <input type="text" id="Coun">
+                    <br>
+                    <br>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" required>
+                    <br>
+                    <br>
+                </div>
+                <div class="credit"> 
+                    <div id="cardcomp">
+                    <input type="radio" id="am" name="credit" value="am" required>
+                    <label for="am"><img src="/Untitled design (3).png" alt="American Express" width="75px"></label>
+                    <input type="radio" id="visa" name="credit" value="visa" required>
+                    <label for="visa"><img src="/Untitled design.png" alt="visa" width="75px"></label>
+                    <input type="radio" id="dc" name="credit" value="" required> 
+                    <label for="dc"><img src="/Untitled design (2).png" alt="discover" width="75px"></label>
+                    <input type="radio" id="mc" name="credit" value="mc" required>
+                    <label for="mc"><img src="/Untitled design (1).png" alt="Master card" width="75px"></label>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="Coun">Credit Card Number</label>
+                    <input type="text" id="Coun" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" maxlength="19" required>
+                    <br>
+                    <br>
+                    <label for="exdate">Expiration Date</label>
+                    <input type="date" id="exdate" name="expire" required>
+                    <br>
+                    <br>
+                    <label for="csc">CSC</label>
+                    <input type="text" id="csc" name="CSC" pattern="[0-9]*[^a-zA-Z]" maxlength="3" required>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </div>
+                
+            </form>
+            
+    </section>
+    <footer>
+    <p>All Rights reserved Copyright &#169;</p>
+    </footer>
+</body>
+</html>
